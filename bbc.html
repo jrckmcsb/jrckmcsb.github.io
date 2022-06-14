@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+
+  <title>jrckmcsb | Portfolio</title>
+  <style>
+    body{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        line-height: 2.4rem;
+      
+        font-family: 'Sora', sans-serif;
+    }
+
+   
+
+
+  </style>
+</head>
+    <body>
+      
+        <header>
+            <nav class="flex justify-between px-4 py-8 mx-auto " style="background-color: #444CF7;" id="nav">
+                <div>
+                  <h3 class="text-2xl text-center font-medium sm:text-center text-zinc-50">Jerick James Macasieb</h3>
+                </div>
+                <div class="hidden space-x-8 lg:flex  text-zinc-50" id="menu">
+                  <a href="#" onclick="window. top. close()">Close</a>
+                 
+                </div>
+                
+                <div class="flex lg:hidden" id="menu-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </div>
+              </nav>
+        </header>
+
+
+        <section class="container p-10">
+          
+            <h1 class="text-4xl"> BBC CSRF Attack </h1>
+            <p>
+                This vulnerability allows the user to setup the city of different user when the victims click the link.
+                After analyzing the request I noticed that the CSRF token is absent thus testing it with a CSRF Attack can be
+                possible. After generating a Proof of Concept code, I send it with my second user and change its city. After
+                proving that the endpoint is vulnerable, I send a report on BBC and send it, after sometime they add me to acknowledgement
+                and they also sent a swag.
+            </p>
+
+            <img src="./assets/img/bbc/bbc-hof.png" alt="">
+            
+
+
+        </section>
+        <script src="https://kit.fontawesome.com/69375eb2b3.js" crossorigin="anonymous"></script>
+</body>
+</html>

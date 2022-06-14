@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <title>jrckmcsb | Portfolio</title>
+</head>
+    <body>
+        <header>
+            <nav class="px-4 py-8 mx-auto ">
+                <div class="text-center">
+                  <h3 class="text-2xl font-medium sm:text-center text-zinc-50">Jerick James Macasieb</h3>
+                </div>
+              </nav>
+
+              <!--blob effects-->
+              <div class="blob-1"></div>
+              <div class="blob-2"></div>
+               <!--end blob effects-->
+
+
+
+        </header>
+    <!--start landing page-->
+        <section>
+            <div class=" py-80 text-center">
+                <div class="container">
+                    <h3 class="text-4xl fade">Jerick James Zai Paul Macasieb</h3>
+                    <div class="py-5">
+                       <p>Hi! I am Jerick James Zai Paul Macasieb and I like to do some</p> 
+                       <p>web <span id="works"></span></p>
+                    </div>
+                   <div class="py-10">
+                       <a href="#contact" class="btn border-primary border-2">Contact <i class="fa-solid fa-inbox"></i> </a>
+                   </div>
+   
+                   <div>
+                       <a href="https://www.linkedin.com/in/jrckmcsb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://github.com/jrckmcsb" target="_blank"><i class="fa-brands fa-github"></i></a>
+             
+               
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!--end landing page-->
+        <!--start about page-->
+        <section  style="background-color:#D7E0EA ;">
+            
+            <div class=" py-20 text-center">
+                <div class="container">
+                   
+                    <h1 class="text-4xl">About</h1>
+                    <p>
+                        I am Jerick James Zai Paul Macasieb and I have 2 years experiece on Bug Bounty Hunting, mostly I do some security testing on startup companies and some EdTech websites. I also like
+                        testing open source projects on my free time. I have EJPT and planning to take other security certifications soon. I also doing some bug boutny hunting on <a href="https://hackerone.com/ex1st3nc3_" target="_blank" style="color:blue">hackerone</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--end about page-->
+        <!--start works page-->
+        <section class="text-center">
+            <div class=" py-40">
+                <h1 class="text-4xl">Works and Findings</h1>
+                <p>Here are some of my works and findings</p>
+            </div>
+            <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5" id="works">
+                <!--Card 1-->
+                <div class="rounded overflow-hidden shadow-lg">
+                  <img class="object-center" src="./assets/img/accounttakeover.png" alt="Mountain">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Account Takeover on Edmodo</div>
+                    <p class="text-gray-700 text-base">
+                        My most favorite bug so far
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#accounttakeover</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#edmodo</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#exposedaccesstoken</span>
+                    <div>
+                        <a class="btn bg-blue-300" href="edmodo-account-takeover.html" target="_blank">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!--Card 2-->
+                <div class="rounded overflow-hidden shadow-lg">
+                  <img class="object-contain h-48 w-96 px-6" style="margin-left:7%"src="./assets/img/logo.png" alt="Privatus Exploit">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">MantisBT : Privatus</div>
+                    <p class="text-gray-700 text-base">
+                        A Python script for exploiting multiple CVE's for open-source project called Mantis Bug Tracker
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#python3</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#mantisbt</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#exploit</span>
+                    <div>
+                        <a class="btn bg-blue-300" href="privatus.html" target="_blank">Read More</a>
+                    </div>
+                  </div>
+                </div>
+            
+                <!--Card 3-->
+                <div class="rounded overflow-hidden shadow-lg">
+                  <img class="w-full" src="./assets/img/bbc.png" alt="BBC">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">CSRF attack on BBC</div>
+                    A CSRF attack which allows the attacker to setup the city of the victim
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#csrf</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#hof</span>
+                    <div>
+                        <a class="btn bg-blue-300" href="bbc.html" target="_blank">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--end works page-->
+        <section class="text-center" id="works" style="background-color:#D7E0EA ;">
+          <div class=" py-20">
+              <h1 class="text-4xl">Feedbacks</h1>
+              <p>Here are some feedbacks from my previous works</p>
+          </div>
+          <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+              <!--Card 1-->
+              <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">"Friendly interactions, and an eye for detail. Great person to work with!"</div>
+                  <p class="text-gray-700 text-base">
+                     ImpressCMS
+                  </p>
+                </div>
+              </div>
+              <!--Card 2-->
+              <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">"Jerick did a great job and found a vulnerability I didn't know even existed"</div>
+                  <p class="text-gray-700 text-base">
+                    Swetrix
+                  </p>
+                </div>
+              </div>
+              <!--Card 3-->
+              <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">"We were nervous about whether our users were well-protected. I now see we had good reason to worry. Jerick helps me sleep better at night."</div>
+                  <p class="text-gray-700 text-base">
+                   Weave
+                  </p>
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+        <!--start contact page-->
+        <section id="contact">
+            <div class=" py-80">
+                <div class="container text-center">
+                    <h1 class="text-4xl">Contact</h1>
+                        <p>macasiebjerick@gmail.com</p>
+                    <a  class="btn" href="mailto:macasiebjerick@gmail.com"> Contact me </a>
+                </div>
+            </div>
+        </section>
+        <!--end contact page-->
+
+            <footer class="px-4 py-8 mx-auto">
+              <div class="text-center">
+                <h3 class="text-2xl font-medium sm:text-center text-zinc-50">Jerick James Macasieb</h3>
+              </div>
+            </footer>
+
+
+        <!-- scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://kit.fontawesome.com/69375eb2b3.js" crossorigin="anonymous"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!--end scripts-->
+    </body>
+</html>

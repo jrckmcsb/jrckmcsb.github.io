@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+
+  <title>jrckmcsb | Portfolio</title>
+  <style>
+    body{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        line-height: 2.4rem;
+        font-family: 'Roboto', sans-serif;
+font-family: 'Sora', sans-serif;
+    }
+
+    html{
+        scroll-behavior: smooth;
+
+    }
+
+
+
+
+  </style>
+</head>
+    <body>
+      
+        <header>
+            <nav class="flex justify-between px-4 py-8 mx-auto " style="background-color: #444CF7;" id="nav">
+                <div>
+                  <h3 class="text-2xl text-center font-medium sm:text-center text-zinc-50">Jerick James Macasieb</h3>
+                </div>
+                <div class="hidden space-x-8 lg:flex  text-zinc-50" id="menu">
+                  <a href="#" onclick="window. top. close()">Close</a>
+                 
+                </div>
+                
+                <div class="flex lg:hidden" id="menu-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </div>
+              </nav>
+              <div class="blob-1"></div>
+              <div class="blob-2"></div>
+    
+              
+        </header>
+
+
+        <section class="container p-10">
+          
+            <h1 class="text-4xl"> MantisBT : Privatus </h1>
+            <p>
+                After doing some bug bounty hunting I decide to explore the other stuffs, testing the open source and challenged myself to get a CVE, after doing some research I read a report on Hackerone
+                which the reporter send a report and he got a CVE, so I also decided to test that application
+            </p>
+
+            <h1 class="text-4xl">What is Mantis Bug Tracker </h1>
+            <p>
+                MantisBT is an open source issue tracker that provides a delicate balance between simplicity and power. Users are able to get started in minutes and start managing their projects while collaborating with their teammates and clients effectively. 
+                Simply Mantis Bug Tracker is a open source tool for bug tracking
+            </p>
+
+            <h1 class="text-4xl">Getting my first CVE</h1>
+            <p>
+                After downloading the application I start to test it, I insert a lot of payloads and I managed to find a HTML Injection and a possible XSS <code>CVE-2020-16266</code>
+            </p>
+
+            <h1 class="text-4xl">Getting more CVE</h1>
+            <p>
+                So I decided to test the other types of vulnerability called IDOR or Insecure Direct Object Reference, the program is vulnerable on different endpoints on this type of vulnerability which allows
+                the user to leaked some private information about the report
+            </p>
+
+            <h1>Creating MantisBT : Privatus</h1>
+            <p>
+                Since this bug requires a lot of checking I decided to create an exploit which allows you to bruteforce the id's to check if a private issue is submitted by other user and leaked some of the information 
+                of it
+            </p>
+            <img src=".//assets/img/mantisbt/poc.gif" alt="">
+        
+            <p>You can also check it on   <a target="_blank" href= "https://github.com/jrckmcsb/MantisBT-Privatus/" ><i class="fa-brands fa-github"></i></a>
+
+
+        </section>
+        <script src="https://kit.fontawesome.com/69375eb2b3.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+
+  <title>jrckmcsb | Portfolio</title>
+  <style>
+    body{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        line-height: 2.4rem;
+        font-family: 'Roboto', sans-serif;
+font-family: 'Sora', sans-serif;
+    }
+
+    html{
+        scroll-behavior: smooth;
+
+    }
+
+
+
+
+  </style>
+</head>
+    <body>
+      
+        <header>
+            <nav class="flex justify-between px-4 py-8 mx-auto " style="background-color: #444CF7;" id="nav">
+                <div>
+                  <h3 class="text-2xl text-center font-medium sm:text-center text-zinc-50">Jerick James Macasieb</h3>
+                </div>
+                <div class="hidden space-x-8 lg:flex  text-zinc-50" id="menu">
+                  <a href="#" onclick="window. top. close()">Close</a>
+                 
+                </div>
+                
+                <div class="flex lg:hidden" id="menu-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </div>
+              </nav>
+              <div class="blob-1"></div>
+              <div class="blob-2"></div>
+              <!-- <div class="blob-outline-only"></div>
+              <div class="blob-outline-only-1"></div> -->
+              
+        </header>
+
+
+        <section class="container p-10">
+            <h1 class="text-4xl"> Account Takeover on Edmodo via exposed password reset token </h1>
+           <p>
+            Edmodo is a EdTech websites that allows the user to communicate with the teachers,parents and students. On my bug bounty journey, I still remember the first time that I managed to recieve the swag from
+            Edmodo after finding my first bug on the website, the bug allows me to download any <code>.docx</code> file from the chatbox of other users, after some months of doing some security testing on Edmodo,
+            they changed their rules and starts to give monetary compensation/bounty instead of swags.
+           </p>
+
+           <h1 class="text-4xl"> Improving my status </h1>
+           <p>
+            After Edmodo changed their rules, I decided to invest my time on learning some new bugs,techniques and other stuffs, after a short period of time I learned other stuffs from recon phase, different tools and
+            other bugs. After the bugs are get confirmed by Edmodo Security Team, they send some bounty on me and it helps me to invest on my equipment from laptop and owning a high specs computer, the bounty also helps me
+            to provide some basic needs for my parents and siblings, a lot of time pass but still I didn't know the forgot-password bug
+           </p>
+
+           <h1 class="text-4xl"> Account Takeover </h1>
+           <p>
+            I remember that night, I am watching a talk from Youtuber called <a href="#">nahamsec</a>, he's interviewing ngalonc on that talk and they talk about the leakage of password reset token, after watching it I decide to try the new
+            technique that I learned, after testing it I learned that all this time I am doing security testing with an authenticated users but not with unauthenticated users and the bug can really used to breach the company.
+            I analyzed the request and response on Burpsuite and I confirm that the password reset token is exposed.
+            I immediately create a report and a proof of concept for the exploit of that vulnerability, after some time Edmodo fixed the vulnerability
+           </p>
+
+           <img src=".//assets/img/edmodo/req-res.png" alt="">
+
+           <p>After they confirm it they sent to me a 500$ bounty</p>
+
+           <img src=".//assets/img/edmodo/edmodo-bounty.png" alt="Edmodo Bounty">
+
+
+           <p>On that day I learned the importance of checking the request and the response</p>
+
+           <h1 class="text-4xl"> My custom exploit </h1>
+           <p>I created an exploit using a python script</p>
+           <img src=".//assets/img/accounttakeover.gif" alt="">
+
+
+       
+        </section>
+
+
